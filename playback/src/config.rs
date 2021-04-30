@@ -24,7 +24,7 @@ impl FromStr for Bitrate {
 
 impl Default for Bitrate {
     fn default() -> Self {
-        Self::Bitrate160
+        Self::Bitrate320
     }
 }
 
@@ -143,7 +143,7 @@ impl Default for PlayerConfig {
             normalisation_release: 0.1,
             normalisation_knee: 1.0,
             gapless: true,
-            passthrough: false,
+            passthrough: true,
         }
     }
 }
